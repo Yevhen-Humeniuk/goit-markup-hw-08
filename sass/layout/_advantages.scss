@@ -1,13 +1,13 @@
-.advantages-icons-list {
-  display: flex;
-  justify-content: center;
-}
+// .advantages-icons-list {
+//   display: flex;
+//   justify-content: center;
+// }
 // .checkbox-container {
 //   margin-top: 20px;
 // }
-.benefits {
-  display: flex;
-}
+// .section__list {
+//   display: flex;
+// }
 .advantages-item-icon {
   width: 270px;
   height: 120px;
@@ -15,32 +15,41 @@
   margin-right: auto;
   background-color: var(--icons-background-color);
 }
-.benefits__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.avantages-icons-container {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // margin-right: 0 auto;
   background-color: var(--icons-background-color);
   border-radius: 4px;
   height: 120px;
 }
-.advantages-item-icon:not(:first-child) {
-  width: calc(100% / 4 - 30px);
-  margin-left: 30px;
+.advantages-icon {
+  display: block;
+  margin: 0 auto;
+  margin-top: 0 auto;
+  text-align: center;
 }
-.benefits__item {
-  & + & {
-    margin-left: 30px;
-  }
-}
+// .advantages-item-icon:not(:first-child) {
+//   width: calc(100% / 4 - 30px);
+//   margin-left: 30px;
+// }
+// .section__item {
+//   & + & {
+//     margin-left: 30px;
+//   }
+// }
 
-.benefits__title {
+.section__title {
   margin-top: 30px;
   margin-bottom: 10px;
   @include text-font(null, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--header-links-title-text-color);
+  text-align: center;
 }
-.benefits__text {
+.section__posttitle {
   @include text-font(null, 14px, 1.71, 0.03em);
   color: var(--primary-text-color);
+  margin-bottom: 30px;
 }

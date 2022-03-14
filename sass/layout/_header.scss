@@ -31,7 +31,7 @@
     color: var(--accent-color);
   }
 }
-.contacts {
+.header__list {
   align-items: center;
   display: flex;
   margin-left: auto;
@@ -41,11 +41,11 @@
     color: var(--accent-color);
   }
 }
-.contacts__item-mail {
+.header__item-mail {
   margin-right: 50px;
 }
 
-.contacts__tel-link {
+.header__tel-link {
   align-items: center;
   display: flex;
   padding-top: 32px;
@@ -61,7 +61,7 @@
     color: var(--accent-color);
   }
 }
-.contacts__mail-link {
+.header__mail-link {
   align-items: center;
   display: flex;
   padding-top: 32px;
@@ -77,18 +77,18 @@
     color: var(--accent-color);
   }
 }
-.contacts__mail-icon {
+.header__mail-icon {
   margin-right: 10px;
   justify-content: center;
   align-items: center;
   fill: currentColor;
 }
-.contacts__tel-icon {
+.header__tel-icon {
   margin-right: 10px;
   align-items: center;
   fill: currentColor;
 }
-.navigation__link__current {
+.current {
   position: relative;
   color: var(--accent-color);
   &::after {
