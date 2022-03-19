@@ -13,12 +13,13 @@
   background-size: cover;
 }
 .hero-section__title {
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  @include text-font(null, 44px, 1.36, 0.06em);
+  // @include text-font(null, 44px, 1.36, 0.06em);
   text-transform: uppercase;
+  @include text-font(null, 26px, 1.62, 0.06em);
 }
 .hero-section__btn {
   min-width: 200px;
