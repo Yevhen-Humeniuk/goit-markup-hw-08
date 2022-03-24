@@ -72,7 +72,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 768px;
+    width: 1200px;
   }
 }
 
@@ -275,6 +275,20 @@ body {
   color: var(--hero-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .section__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section__item {
+    width: calc(100% / 2 - 30px);
+  }
+}
+
 .advantages-item-icon {
   width: 270px;
   height: 120px;
@@ -289,11 +303,30 @@ body {
   height: 120px;
 }
 
+@media screen and (min-width: 1200px) {
+  .avantages-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0 auto;
+  }
+}
+
 .advantages-icon {
   display: block;
   margin: 0 auto;
   margin-top: 0 auto;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-item-icon:not(:first-child) {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
+  .section__item + .section__item {
+    margin-left: 30px;
+  }
 }
 
 .section__title {
@@ -374,15 +407,47 @@ body {
   color: var(--header-links-title-text-color);
 }
 
+.team-section__list {
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
 .team-section__item {
   background: var(--hero-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-section__item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section__item {
+    width: calc(100% / 4 - 30px);
+  }
 }
 
 .team-name-container {
   padding-top: 30px;
   padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-name-container {
+    padding-bottom: 30px;
+  }
 }
 
 .team-section__title-name {
@@ -452,26 +517,28 @@ body {
   color: var(--header-links-title-text-color);
 }
 
-@media screen and (max-width: 768px) {
-  .regular-customers-list {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+.regular-customers-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 480px) {
-  .regular-customers-item {
-    width: calc(100% / 2 - 30px);
-    margin-top: 30px;
-  }
+.regular-customers-item {
+  width: calc(100% / 2 - 30px);
+  margin-top: 30px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .regular-customers-item {
     width: calc(100% / 3 - 30px);
     margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-customers-item {
+    width: calc(100% / 4 - 30px);
   }
 }
 
@@ -693,8 +760,14 @@ body {
 
 .bottons-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .bottons-list {
+    justify-content: center;
+  }
 }
 
 .btns-item + .btns-item {
@@ -730,17 +803,33 @@ body {
 }
 
 .projects-list {
-  display: flex;
   margin-left: -30px;
   margin-top: -30px;
-  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .projects-item {
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc(100% / 3 - 30px);
-  transition: color 250ms;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-item {
+    flex-basis: calc(100% / 3 - 30px);
+    transition: color 250ms;
+  }
 }
 
 .image {
@@ -823,7 +912,7 @@ body {
 
 .modal {
   padding: 40px;
-  width: 528px;
+  width: 100%;
   min-height: 581px;
   background-color: var(--hero-text-color);
   border-radius: 4px;
@@ -832,6 +921,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) rotate(0) scale(1);
   transition: transform 500ms;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .modal-btn {

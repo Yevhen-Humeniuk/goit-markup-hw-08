@@ -3,32 +3,25 @@
   text-align: center;
   color: var(--header-links-title-text-color);
 }
-@media screen and (max-width: 768px) {
-  .regular-customers-list {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+.regular-customers-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 480.99px) {
-  .regular-customers-item {
-    width: calc(100% / 2 - 30px);
-    margin-top: 30px;
-  }
-}
-@media screen and (min-width: 481px) {
-  .regular-customers-item {
+.regular-customers-item {
+  width: calc(100% / 2 - 30px);
+  margin-top: 30px;
+  @include table {
     width: calc(100% / 3 - 30px);
     margin-top: 30px;
   }
-}
-@media screen and (min-width: 1200px) {
-  .regular-customers-item {
-    display: flex;
-    margin-top: 30px;
+  @include desk {
+    width: calc(100% / 4 - 30px);
   }
+}
+
 .regular-customers-link {
   border: 1px solid var(--icons-socisls-color);
   border-radius: 4px;

@@ -5,9 +5,18 @@
 // .checkbox-container {
 //   margin-top: 20px;
 // }
-// .section__list {
-//   display: flex;
-// }
+@include table {
+  .section__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@include table {
+  .section__item {
+    width: calc(100% / 2 - 30px);
+  }
+}
 .advantages-item-icon {
   width: 270px;
   height: 120px;
@@ -16,13 +25,15 @@
   background-color: var(--icons-background-color);
 }
 .avantages-icons-container {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // margin-right: 0 auto;
   background-color: var(--icons-background-color);
   border-radius: 4px;
   height: 120px;
+  @include desk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0 auto;
+  }
 }
 .advantages-icon {
   display: block;
@@ -30,16 +41,17 @@
   margin-top: 0 auto;
   text-align: center;
 }
-// .advantages-item-icon:not(:first-child) {
-//   width: calc(100% / 4 - 30px);
-//   margin-left: 30px;
-// }
-// .section__item {
-//   & + & {
-//     margin-left: 30px;
-//   }
-// }
-
+@include desk {
+  .advantages-item-icon:not(:first-child) {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
+  .section__item {
+    & + & {
+      margin-left: 30px;
+    }
+  }
+}
 .section__title {
   margin-top: 30px;
   margin-bottom: 10px;
