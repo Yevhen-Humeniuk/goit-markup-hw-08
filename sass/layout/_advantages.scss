@@ -1,20 +1,27 @@
-// .advantages-icons-list {
-//   display: flex;
-//   justify-content: center;
-// }
-// .checkbox-container {
-//   margin-top: 20px;
-// }
-@include table {
-  .section__list {
+.advantages-icons-list {
+  display: flex;
+  justify-content: center;
+}
+.checkbox-container {
+  margin-top: 20px;
+}
+
+.section__list {
+  @include table {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  }
+  @include desk {
+    display: flex;
   }
 }
-@include table {
-  .section__item {
+
+.section__item {
+  @include table {
     width: calc(100% / 2 - 30px);
+  }
+  @include desk {
+    width: calc(100% / 4 - 30px);
   }
 }
 .advantages-item-icon {
@@ -42,10 +49,10 @@
   text-align: center;
 }
 @include desk {
-  .advantages-item-icon:not(:first-child) {
-    width: calc(100% / 4 - 30px);
-    margin-left: 30px;
-  }
+  // .advantages-item-icon:not(:first-child) {
+  //   width: calc(100% / 4 - 30px);
+  //   margin-left: 30px;
+  // }
   .section__item {
     & + & {
       margin-left: 30px;
