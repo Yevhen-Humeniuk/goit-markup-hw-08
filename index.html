@@ -36,7 +36,32 @@
                     <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>+380961111111</a></li>
         </ul>
+        <button type="button class="open-menu-btn"><svg class="open-menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use></svg>
+        </button>
         </div>
+        <div class="mob-menu"><div class="container"><button type="button class=" closed-menu-btn"><svg class="open-menu-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close_40px"></use>
+            </svg></button>
+        <ul class="mob-nav-list">
+            <li class="mob-nav-item"><a href="" class="mob-navigation-link">Студия</a></li>
+            <li class="mob-nav-item"><a href="" class="mob-navigation-link">Портфолио</a></li>
+            <li class="mob-nav-item"><a href="" class="mob-navigation-link">Контакты</a></li>
+        </ul>
+    <ul class="header-mob-list">
+        <li class="header-mob-item-mail">
+            <a href="mailto:info@devstudio.com" class="mob-mail-link">info@devstudio.com</a>
+        </li>
+        <li class="header-mob-item-tel">
+            <a href="tel:+380961111111" class="mob-tel-link">+380961111111</a>
+        </li>
+    <ul class="mob-soc-list">
+        <li class="mob-soc-item"><a href="" class="mob-socials-link">Instagram</a></li>
+        <li class="mob-soc-item"><a href="" class="mob-socials-link">Twitter</a></li>
+        <li class="mob-soc-item"><a href="" class="mob-socials-link">Facebook</a></li>
+        <li class="mob-soc-item"><a href="" class="mob-socials-link">LinkedIn</a></li>
+    </ul></div>
+</div>
     </header>
     <!-- герой -->
         <main class="hero">
@@ -106,10 +131,25 @@
                 <li class="team-section__item">
                     <picture>
                         <source
-                        srcset="./images/our-team/igor/"
-                        media="(min-width: 1200px)">
+                        srcset="
+                        ./images/our-team/igor/igor-desk.jpg,
+                        ./images/our-team/igor/igor-desk-2x.jpg x2"
+                        media="(min-width: 1200px)"
+                        />
+                        <source
+                        srcset="
+                        ./images/our-team/igor/igor-tab.jpg,
+                        ./images/our-team/igor/igor-tab-2x.jpg x2"
+                        media="(min-width: 768px)"
+                        />
+                        <source
+                        srcset="
+                        ./images/our-team/igor/igor-mob.jpg,
+                        ./images/our-team/igor/mihail-mob-2x.jpg x2"
+                        media="(min-width: 480px)"
+                        />
+                        <img src="./images/our-team/igor/img.jpg" alt="молодой мужчина в очках с бородой">
                     </picture>
-                    <img src="./images/our-team/igor/img.jpg" alt="молодой мужчина в очках с бородой" width="270" height="260">
                     <div class="team-name-container">
                     <h3 class="team-section__title-name">Игорь Демьяненко</h3>
                     <p class="team-section__posttitle" lang="en">Product Designer</p>
@@ -134,7 +174,24 @@
                     </div>
                 </li>
                 <li class="team-section__item">
-                    <img src="./images/our-team/olga/img1.jpg" alt="молодаяженщина в очках" width="270" height="260">
+                    <picture>
+                        <source srcset="
+                        ./images/our-team/olga/olga-desk.jpg,
+                        ./images/our-team/olga/olga-desk-2x.jpg x2
+                        "media="(min-width: 1200px)"
+                        />
+                        <source srcset="
+                        ./images/our-team/olga/olga-tab.jpg,
+                        ./images/our-team/olga/olga-tab-2x.jpg x2
+                        "media="(min-width: 768px)"
+                        />
+                        <source srcset="
+                        ./images/our-team/olga/olga-mob.jpg,
+                        ./images/our-team/olga/olga-mob-2x.jpg x2
+                        "media="(min-width: 480px)"
+                        />
+                    <img src="./images/our-team/olga/img1.jpg" alt="молодая женщина в очках">
+                    </picture>
                     <div class="team-name-container">
                     <h3 class="team-section__title-name">Ольга Репина</h3>
                     <p class="team-section__posttitle" lang="en">Frontend Developer</p>
@@ -159,8 +216,24 @@
                     </div>
                 </li>
                 <li class="team-section__item">
-                    <img src="./images/our-team/nikolay/img2.jpg" alt="улыбчивый молодой мужчина с коротко стриженой бородой"
-                        width="270" height="260">
+                    <picture>
+                        <source srcset="
+                        ./images/our-team/nikolay/nikolay-desk.jpg,
+                        ./images/our-team/nikolay/nikolay-desk-2x.jpg x2
+                        "media="(min-width: 1200px)"
+                        />
+                        <source srcset="
+                        ./images/our-team/nikolay/nikolay-tab.jpg,
+                        ./images/our-team/nikolay/nikolay-tab-2x.jpg x2
+                        "media="(min-width: 768px)"
+                        />
+                        <source srcset="
+                        ./images/our-team/nikolay/nikolay-mob.jpg,
+                        ./images/our-team/nikolay/nikolay-mob-2x.jpg x2
+                        "media="(min-width: 480px)"
+                        />
+                    <img src="./images/our-team/nikolay/img2.jpg" alt="улыбчивый молодой мужчина с коротко стриженой бородой">
+                    </picture>
                     <div class="team-name-container">
                     <h3 class="team-section__title-name">Николай Тарасов</h3>
                     <p class="team-section__posttitle" lang="en">Marketing</p>
@@ -185,7 +258,23 @@
                     </div>
                 </li>
                 <li class="team-section__item">
-                    <img src="./images/our-team/mihail/img3.jpg" alt="молодой мужчина в очках с бородой" width="270" height="260">
+                    <picture>
+                        <source srcset="
+                            ./images/our-team/mihail/mihail-desk.jpg,
+                            ./images/our-team/mihail/mihail-desk-2x.jpg x2
+                            "media="(min-width: 1200px)"
+                            />
+                        <source srcset="
+                            ./images/our-team/mihail/mihail-tab.jpg,
+                            ./images/our-team/mihail/mihail-tab-2x.jpg x2
+                            "media="(min-width: 768px)"
+                            />
+                        <source srcset="
+                            ./images/our-team/mihail/mihail-mob.jpg,
+                            ./images/our-team/mihail/mihail-mob-2x.jpg x2
+                            "media="(min-width: 480px)"
+                            />
+                    <img src="./images/our-team/mihail/img3.jpg" alt="молодой мужчина в очках с бородой">
                     <div class="team-name-container">
                     <h3 class="team-section__title-name">Михаил Ермаков</h3>
                     <p class="team-section__posttitle" lang="en">UI Designer</p>

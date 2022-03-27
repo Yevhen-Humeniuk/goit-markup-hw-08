@@ -32,12 +32,18 @@ h6 {
 
 button {
   cursor: pointer;
+  margin-left: auto;
+  border: transparent;
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -52,13 +58,12 @@ body {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .container {
     width: 480px;
   }
@@ -122,6 +127,7 @@ body {
 .navigation__list {
   margin-left: 93px;
   display: flex;
+  display: none;
 }
 
 .navigation__item + .navigation__item {
@@ -148,6 +154,7 @@ body {
 .header__list {
   align-items: center;
   display: flex;
+  display: none;
   margin-left: auto;
 }
 
@@ -225,6 +232,41 @@ body {
   left: 0;
   bottom: 0;
   border-radius: 2px;
+}
+
+.mob-menu {
+  position: absolute;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.open-menu-btn {
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+  border: transparent;
+}
+
+.mob-soc-list {
+  display: flex;
+}
+
+.mob-soc-item + .mob-soc-item :not(first-child) {
+  margin-left: 20px;
+}
+
+.mob-nav-list {
+  display: block;
+}
+
+.closed-menu-btn {
+  border: transparent;
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .hero-section {
