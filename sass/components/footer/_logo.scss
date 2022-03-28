@@ -1,0 +1,39 @@
+//logo footer
+
+.footer-logo {
+  @include default {
+    //margin-top: 10px;
+    //margin-left: 60px;
+  }
+
+  @include phone {
+    text-align: center;
+
+    //align-items:center;
+    //justify-content: center;
+    //margin-top: 60px;
+    //margin-left: 163px;
+  }
+
+  @include tablet {
+    //margin-top: 30px;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  @include desktop {
+    //margin-top: 60px;
+    margin-left: 40px;
+  }
+
+  &__web {
+    @include font(Raleway, normal, bold, 26px, 1.19, none, 0.03em);
+    color: $main-blue-color;
+  }
+
+  &__studio {
+    @include font(Raleway, normal, bold, 26px, 1.19, none, 0.03em);
+    color: $main-white-color;
+    list-style: none;
+  }
+}

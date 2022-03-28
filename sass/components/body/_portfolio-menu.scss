@@ -1,0 +1,137 @@
+//Portfolio Menu
+
+
+.portfolio-menu{
+
+    &__list{
+        @include default{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 60px;
+            //margin-bottom: 20px;
+            //margin-left: -20px;
+            
+        }
+
+        @include phone{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            //margin-left: -20px;
+            
+        }
+
+        @include tablet{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            
+            
+        }
+
+        @include desktop{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            //margin-top: 94px;
+            margin-bottom: 50px;
+            
+        }
+       
+    }
+
+    &__item{
+       
+        @include default{
+            width: calc(100% /2- 30px);
+            margin-bottom: 20px; 
+            margin-left: 10px;
+            &  + & {
+                margin-left: 15px;
+             }
+            }
+
+        @include phone{
+            width: calc(100% /3- 30px);
+            //margin-bottom: 20px; 
+            margin-left: 10px;
+            &  + & {
+                margin-left: 8px;
+             }   
+
+       }
+
+        @include tablet{
+            width: none;  
+              
+       }
+
+       
+        @include desktop{
+            width: calc(100% /8- 30px);
+            //margin-bottom: 20px;
+            &  + & {
+                margin-left: 8px;
+             }
+        }
+            
+      
+    }
+
+
+
+    &__button {
+        @include font(Roboto, normal, 500, 16px, 1.62, none, 0.03em);
+        //width: 140px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #212121;
+        background: #F5F4FA;
+       
+        border-radius: 4px;
+        outline:none;
+        border: 0;
+        outline:0;
+        padding: 6px 22px;
+        display: block;
+        margin: 0 auto;
+        transition: color 300ms linear, background-color 300ms linear;
+        
+            &:hover, 
+            &:focus {
+                color: $main-white-color;
+                background:$main-blue-color;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    }
+    
+
+    &__button__active{
+        @include font(Roboto, normal, 500, 16px, 1.62, none, 0.03em);
+        width: 100px;
+        text-align: center;
+        color: $main-white-color;
+        background: $main-blue-color;
+        border-radius: 4px;
+        padding: 6px 22px;
+        outline:none;
+        display: block;
+        margin: 0 auto;
+        border: 0;
+        outline:0;
+        transition: color 300ms linear, background-color 300ms linear;
+        &:hover, &:focus{
+            color: #212121;
+            background: #F5F4FA;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);   
+        }
+    }
+}
+
+
+
+
+

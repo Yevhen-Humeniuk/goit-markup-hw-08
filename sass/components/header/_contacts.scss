@@ -1,0 +1,36 @@
+//header-contacts
+.header-contact{
+  @include default{
+    display: none;
+}
+
+@include phone{
+    display: none;
+}
+@include tablet{
+    display: inline-block;
+}
+    
+
+@include desktop{
+    display: flex;
+    &__item + &__item{
+        margin-left: 50px;
+        }
+
+}
+ margin-left: auto;
+  
+   
+
+    &__link{
+    @include font(Roboto, normal, 500, 14px, 1.14, none, 0.02em);
+    color: $main-gray-color;
+    transition: color 300ms linear, fill 300ms linear;
+    &:hover,
+    &:focus{
+        fill:   $main-blue-color; 
+        color:  $main-blue-color;
+      }
+    }
+}

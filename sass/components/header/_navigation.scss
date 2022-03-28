@@ -1,0 +1,48 @@
+/*Navigation*/
+
+.header-nav{
+        @include default{
+            display: none;
+        }
+        
+        @include phone{
+            display: none;
+        }
+        
+        @include tablet{
+            display: flex;
+        }
+        
+        @include desktop{
+            display: flex;
+        }
+
+ margin-left: 93px;
+ //.header-nav-item + .header-nav-item
+ &__item + &__item {
+margin-left: 50px;
+}
+//.header-nav-link 
+ &__link{
+    @include font(Roboto, normal, 500, 14px, 1.14, none, 0.02em);
+    color: $main-black-color;
+    transition: color 300ms linear, fill 300ms linear;
+    
+     //.header-nav-link:hover, .header-nav-link:focus
+    &:hover,
+    &:focus{
+           
+        fill:   $main-blue-color;
+        color:  $main-blue-color;
+    
+    }
+    
+       //.header-nav-link-active
+    &_active {
+        @include font(Roboto, normal, 500, 14px, 1.14, none, 0.02em);
+        
+        color: $main-blue-color;
+        transition: color 300ms linear;
+        }
+    }
+ }

@@ -1,0 +1,33 @@
+.header-logo-web {
+    @include default{
+        margin-left: -15px
+    }
+
+    @include phone{
+        margin-left: 0px;
+    }
+
+    @include desktop{
+        margin-left: 0px;
+    }
+
+    @include font(Raleway, normal, bold, 26px, 31px, none, 0.03em);
+    list-style: none;
+    color: $main-blue-color;
+        &:hover, 
+        &:focus{
+            fill:   $main-blue-color; 
+            color:  $main-blue-color;
+        }
+    }
+
+.header-logo-studio {
+    @include font(Raleway, normal, bold, 26px, 31px, none, 0.03em);
+    list-style: none;
+    color: $main-black-color;
+        &:hover,  
+        &:focus {
+        fill:   $main-blue-color; 
+        color:  $main-blue-color; 
+        }
+}

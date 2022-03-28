@@ -1,0 +1,131 @@
+//footer subscribe
+
+.footer-subscribe {
+    @include default{
+        text-align: center
+       }
+    
+    @include phone{
+     
+        text-align: center
+       
+       }
+
+    @include tablet{
+     
+    }
+    @include desktop{
+        margin-top: -160px;
+        margin-left: 525px;
+    }
+
+}
+   
+//footer-subscribe-form
+
+.footer-subscribe-form{
+
+        &__label{
+            @include default{
+                text-align: center;
+                margin-top: 60px;
+            }
+
+            @include phone{
+                text-align: center;
+                margin-top: 60px;
+            }
+
+            @include desktop{
+                text-align: left;
+                margin-left: 30px;
+                //margin-top: 60px;
+            }
+            @include font(Roboto, normal, bold, 14px, 1.16, none, 0.03em);
+  
+            text-transform: uppercase;
+            display:block;
+            color: $main-white-color;
+            padding-bottom: 20px;
+            
+            margin-left: 15px;
+            }
+
+        &__icon{
+            //margin-left: 525px;
+            //margin-top: -85px;
+            position: relative;
+            overflow: visible;
+            margin-bottom: -10px;//30
+            margin-right: 30px;
+            margin-left: -50px;//
+        }
+
+      
+        &__input{
+            @include default{
+                width: 280px;
+            }
+
+            @include phone{
+                width: 450px;
+            }
+
+            
+            @include tablet{
+                width: 480px;
+            }
+            
+            @include desktop{
+                width: 358px;
+            }
+
+           
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-sizing: border-box;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            background: #2F303A;
+            color: $main-white-color;
+            font-style: 12px;
+         
+        
+            &::placeholder {
+                @include font(Roboto, normal, normal, 16px, 2.00, none, 0.03em);
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                color: rgba(255, 255, 255, 0.6);
+            }
+            
+        }
+
+        &__button {
+            @include default{
+                margin-left: 20px;
+                margin-top: 30px;   
+            }
+
+            @include tablet{
+                margin-top: 30px;
+                margin-left: 60px;   
+            }
+
+            @include desktop{
+                margin-top: 8px;
+                margin-left: 10px;   
+            }
+
+            //margin-top: 20px;
+            @include font(Roboto, normal, bold, 16px, null, none, 0.06em);
+            color: $main-white-color;
+            background: $main-blue-color;
+            width: 200px;
+            height: 50px;
+            margin-left: 50px;//
+            padding-right: 40px;
+            outline:none;
+            border-radius: 4px;
+            }
+}

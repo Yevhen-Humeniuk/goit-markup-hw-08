@@ -1,0 +1,53 @@
+
+.foter-address{
+    @include default{
+        text-align: center
+       }
+    
+    @include phone{
+        
+
+        text-align: center;
+       }
+
+       @include tablet{
+        text-align:center;
+        margin-left: -460px;
+       }
+
+       @include desktop{
+        text-align:left;
+        margin-left: 40px;
+        margin-bottom:60px;
+         }
+    
+  padding-top: 10px;
+       
+    &-item{
+    
+        margin-top: 9px;
+        align-items: center; /* Vertical align */
+        justify-content: center; /* Horizontal align */
+            }
+    
+    &-text1{
+        @include font(Roboto, normal, normal, 14px, 1.71, none, 0.03em);
+        color: $main-white-color;
+        }
+
+    &-text2{
+        @include font(Roboto, normal, normal, 14px, 1.71, none, 0.03em);
+        color: rgba(255, 255, 255, 0.6);
+        }
+
+ 
+}
+
+
+
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+        background: #2F303A;
+}
+
