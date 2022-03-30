@@ -16,54 +16,70 @@
         <link rel="stylesheet" href="./css/main.min.css">
     </head>
 <body>
-    <header class="header1">
-        <div class="container container-header ">
-            <a href="./index.html" class="header-logo-web">Web</a><a href="./index.html" class="header-logo-studio">Studio</a>
-                    
-                <ul class="header-nav">
-                    <li class="header-nav__item"><a href="./index.html"    class="header-nav__link">Студия</a></li>
-                    <li class="header-nav__item"><a href="./portfolio.html"class="header-nav__link_active current">Портфолио</a></li>
-                    <li class="header-nav__item"><a href="./contact.html"  class="header-nav__link">Контакты</a></li>
-                </ul>
-        
-                <ul class="header-contact">
-                    <li class="header-contact__item">  <a href="mailto:info@devstudio.com" class="header-contact__link"> <svg width="16" height="12"><use href="./images/icons.svg#icon-header-mail" ></use></svg>info@devstudio.com</a></li>
-                    <li class="header-contact__item">  <a href="tel:+380961111111"       class="header-contact__link"> <svg width="10" height="16"><use href="./images/icons.svg#icon-header-tel"  ></use></svg>+380961111111</a></li>
-                </ul>
-                </div>
-                <button type="button" class="header-mobile-btn" header-mobile-open>
-                        <svg class="header-mobile-btn-icon" width="24" height="24">
-                        <use href="./images/icons.svg#header-mobile-btn"></use>
+    <header>
+        <div class="container container-header">
+            <a href="./index.html" class="header-logo-web">Web</a><a href="./index.html"
+                class="header-logo-studio">Studio</a>
+    
+            <ul class="header-nav">
+                <li class="header-nav__item"><a href="./index.html" class="header-nav__link">Студия</a></li>
+                <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link_active current">Портфолио</a></li>
+                <li class="header-nav__item"><a href="./contact.html" class="header-nav__link">Контакты</a></li>
+            </ul>
+    
+            <ul class="header-contact">
+                <li class="header-contact__item"> <a href="mailto:info@devstudio.com" class="header-contact__link"> <svg
+                            width="16" height="12">
+                            <use href="./images/icons.svg#icon-header-mail"></use>
+                        </svg>info@devstudio.com</a></li>
+                <li class="header-contact__item"> <a href="tel:+380961111111" class="header-contact__link"> <svg width="10"
+                            height="16">
+                            <use href="./images/icons.svg#icon-header-tel"></use>
+                        </svg>+380961111111</a></li>
+            </ul>
+        </div>
+    
+        <button type="button" class="header-mobile-btn" header-mobile-open>
+            <svg class="header-mobile-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#header-mobile-btn"></use>
+            </svg>
+        </button>
+        <div class="backdrop is-hidden" header-mobile>
+            <div class="header-mobile">
+                <div class="header-mobile__container">
+                    <button type="button" class="header-mobile-btn-close" header-mobile-close>
+                        <svg class="modal-close-icon" width="11" height="11">
+                            <use href="./images/icons.svg#icon-close-btn1"></use>
                         </svg>
                     </button>
-                    <div class="backdrop is-hidden" header-mobile>       
-                    <div class="header-mobile">
-                    <div class="header-mobile__container">
-                        <button type="button" class="header-mobile-btn-close" header-mobile-close>
-                            <svg class="modal-close-icon" width="11" height="11">
-                                <use href="./images/icons.svg#icon-close-btn1"></use>
-                            </svg>
-                        </button>
-                        <ul class="header-mobile-nav">
-                            <li class="header-mobile-nav__item"><a href="./index.html"    class="header-mobile-nav__link_active" >Студия</a></li>                           
-                            <li class="header-mobile-nav__item"><a href="./portfolio.html"class="header-mobile-nav__link"        >Портфолио</a></li>
-                            <li class="header-mobile-nav__item"><a href="./contact.html"  class="header-mobile-nav__link"        >Контакты</a></li>
-                        </ul>
-                        <ul class="header-mobile-contact">
-                            <li class="header-mobile-contact__item">  <a href="tel:+380961111111"       class="header-mobile-contact__link">+380961111111</a></li>
-                            <li class="header-mobile-contact__item">  <a href="mailto:info@devstudio.com" class="header-mobile-contact__link1">info@devstudio.com</a></li>
-                        </ul>
-                        <ul class="header-mobile-social">
-                            <li class="header-mobile-social__item"><a href="" class="header-mobile-social__link" >Instagram </a> <a href="" class="header-mobile-social__t" >|</a></li>                           
-                            <li class="header-mobile-social__item"><a href="" class="header-mobile-social__link" >Twitter   </a> <a href="" class="header-mobile-social__t" >|</a></li>
-                            <li class="header-mobile-social__item"><a href="" class="header-mobile-social__link" >Facebook  </a> <a href="" class="header-mobile-social__t" >|</a></li>
-                            <li class="header-mobile-social__item"><a href="" class="header-mobile-social__link" >LinkedIn  </a> <a href="" class="header-mobile-social__t" > </a></li>
-                        </ul>
-                        </div>
-                    </div>                   
-                    </div>
+                    <ul class="header-mobile-nav">
+                        <li class="header-mobile-nav__item"><a href="./index.html"
+                                class="header-mobile-nav__link">Студия</a></li>
+                        <li class="header-mobile-nav__item"><a href="./portfolio.html"
+                                class="header-mobile-nav__link_active">Портфолио</a></li>
+                        <li class="header-mobile-nav__item"><a href="./contact.html"
+                                class="header-mobile-nav__link">Контакты</a></li>
+                    </ul>
+    
+                    <ul class="header-mobile-contact">
+                        <li class="header-mobile-contact__item"> <a href="tel:+380961111111"
+                                class="header-mobile-contact__link">+380961111111</a></li>
+                        <li class="header-mobile-contact__item"> <a href="mailto:info@devstudio.com"
+                                class="header-mobile-contact__link1">info@devstudio.com</a></li>
+                    </ul>
+    
+                    <ul class="header-mobile-social">
+                        <li class="header-mobile-social__item"><a href="" class="header-mobile-social__link">Instagram </a>
+                            <a href="" class="header-mobile-social__t">|</a></li>
+                        <li class="header-mobile-social__item"><a href="" class="header-mobile-social__link">Twitter </a> <a
+                                href="" class="header-mobile-social__t">|</a></li>
+                        <li class="header-mobile-social__item"><a href="" class="header-mobile-social__link">Facebook </a>
+                            <a href="" class="header-mobile-social__t">|</a></li>
+                        <li class="header-mobile-social__item"><a href="" class="header-mobile-social__link">LinkedIn </a>
+                            <a href="" class="header-mobile-social__t"> </a></li>
+                    </ul>
                 </div>
-                </section>    
+            </div>
         </div>
     </header>
 <main> 
@@ -101,7 +117,7 @@
                     media="(min-width: 1200px)"/> 
                     <source srcset="./images/portfolio/project-1-tablet-1x.jpg 1x, 
                     ./images/portfolio/project-1-tablet-2x.jpg 2x
-                    "media="(min-width: 768px)" /> 
+                    " media="(min-width: 768px)" /> 
                     <source srcset="./images/portfolio/project-1-phone-1x.jpg 1x, 
                     ./images/portfolio/project-1-phone-2x.jpg 2x"
                     media="(min-width: 320px)" /> <img src="./images/portfolio/project-1.jpg" alt="Project1" /> </picture> <p class="portfolio-projects__text-top"> Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов. </p> </div> <div class="portfolio-projects__text-container">  <h3  class="portfolio-projects__text-h3">Технокряк</h3>                       <p class="portfolio-projects__text-p">Веб-сайт</p>   </div></li>
@@ -113,7 +129,7 @@
                     media="(min-width: 1200px)"/> 
                     <source srcset="./images/portfolio/project-2-tablet-1x.jpg 1x, 
                     ./images/portfolio/project-2-tablet-2x.jpg 2x
-                    "media="(min-width: 768px)" /> 
+                    " media="(min-width: 768px)" /> 
                     <source srcset="./images/portfolio/project-2-phone-1x.jpg 1x, 
                     ./images/portfolio/project-2-phone-2x.jpg 2x"
                     media="(min-width: 320px)" /> <img src="./images/portfolio/project-2.jpg" alt="Project2" /> </picture> <p class="portfolio-projects__text-top">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam sint laborum, ducimus eius debitis consectetur corrupti consequatur in doloremque provident ea amet beatae voluptas ex cumque odio temporibus quas est! </p> </div> <div class="portfolio-projects__text-container">  <h3  class="portfolio-projects__text-h3">Постер New Orlean vs Golden Star</h3><p class="portfolio-projects__text-p">Дизайн</p>     </div></li>
@@ -125,7 +141,7 @@
                     media="(min-width: 1200px)"/> 
                     <source srcset="./images/portfolio/project-3-tablet-1x.jpg 1x, 
                     ./images/portfolio/project-3-tablet-2x.jpg 2x
-                    "media="(min-width: 768px)" /> 
+                    " media="(min-width: 768px)" /> 
                     <source srcset="./images/portfolio/project-3-phone-1x.jpg 1x, 
                     ./images/portfolio/project-3-phone-2x.jpg 2x"
                     media="(min-width: 320px)" /> <img src="./images/portfolio/project-3.jpg" alt="Project3" /> </picture> <p class="portfolio-projects__text-top">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat optio architecto quam, sed aperiam est assumenda iusto ullam laborum doloribus molestiae nemo numquam. Incidunt recusandae illum praesentium culpa, laboriosam enim.</p> </div> <div class="portfolio-projects__text-container">  <h3  class="portfolio-projects__text-h3">Ресторан Seafood</h3>                <p class="portfolio-projects__text-p">Приложение</p> </div></li>
@@ -137,7 +153,7 @@
                     media="(min-width: 1200px)"/> 
                     <source srcset="./images/portfolio/project-4-tablet-1x.jpg 1x, 
                     ./images/portfolio/project-4-tablet-2x.jpg 2x
-                    "media="(min-width: 768px)" /> 
+                    " media="(min-width: 768px)" /> 
                     <source srcset="./images/portfolio/project-4-phone-1x.jpg 1x, 
                     ./images/portfolio/project-4-phone-2x.jpg 2x"
                     media="(min-width: 320px)" /> <img src="./images/portfolio/project-4.jpg" alt="Project4" /> </picture> <p class="portfolio-projects__text-top">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat optio architecto quam, sed aperiam est assumenda iusto ullam laborum doloribus molestiae nemo numquam. Incidunt recusandae illum praesentium culpa, laboriosam enim.</p> </div> <div class="portfolio-projects__text-container">  <h3  class="portfolio-projects__text-h3">Проект Prime</h3>                    <p class="portfolio-projects__text-p">Маркетинг</p>  </div></li>
@@ -149,7 +165,7 @@
                     media="(min-width: 1200px)"/> 
                     <source srcset="./images/portfolio/project-5-tablet-1x.jpg 1x, 
                     ./images/portfolio/project-5-tablet-2x.jpg 2x
-                    "media="(min-width: 768px)" /> 
+                    " media="(min-width: 768px)" /> 
                     <source srcset="./images/portfolio/project-5-phone-1x.jpg 1x, 
                     ./images/portfolio/project-5-phone-2x.jpg 2x"
                     media="(min-width: 320px)" /> <img src="./images/portfolio/project-5.jpg" alt="Project5" /> </picture> <p class="portfolio-projects__text-top">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat optio architecto quam, sed aperiam est assumenda iusto ullam laborum doloribus molestiae nemo numquam. Incidunt recusandae illum praesentium culpa, laboriosam enim.</p> </div> <div class="portfolio-projects__text-container">  <h3  class="portfolio-projects__text-h3">Проект Boxes</h3>                    <p class="portfolio-projects__text-p">Приложение</p> </div></li>
@@ -161,7 +177,7 @@
                     media="(min-width: 1200px)"/> 
                     <source srcset="./images/portfolio/project-6-tablet-1x.jpg 1x, 
                     ./images/portfolio/project-6-tablet-2x.jpg 2x
-                    "media="(min-width: 768px)" /> 
+                    " media="(min-width: 768px)" /> 
                     <source srcset="./images/portfolio/project-6-phone-1x.jpg 1x, 
                     ./images/portfolio/project-6-phone-2x.jpg 2x"
                     media="(min-width: 320px)" /> <img src="./images/portfolio/project-6.jpg" alt="Project6" /> </picture> <p class="portfolio-projects__text-top">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat optio architecto quam, sed aperiam est assumenda iusto ullam laborum doloribus molestiae nemo numquam. Incidunt recusandae illum praesentium culpa, laboriosam enim.</p> </div> <div class="portfolio-projects__text-container">  <h3  class="portfolio-projects__text-h3">Inspiration has no Borders</h3>      <p class="portfolio-projects__text-p">Веб-сайт</p>   </div></li>
@@ -173,7 +189,7 @@
                     media="(min-width: 1200px)"/> 
                     <source srcset="./images/portfolio/project-7-tablet-1x.jpg 1x, 
                     ./images/portfolio/project-7-tablet-2x.jpg 2x
-                    "media="(min-width: 768px)" /> 
+                    " media="(min-width: 768px)" /> 
                     <source srcset="./images/portfolio/project-7-phone-1x.jpg 1x, 
                     ./images/portfolio/project-7-phone-2x.jpg 2x"
                     media="(min-width: 320px)" /> <img src="./images/portfolio/project-7.jpg" alt="Project7" /> </picture> <p class="portfolio-projects__text-top">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat optio architecto quam, sed aperiam est assumenda iusto ullam laborum doloribus molestiae nemo numquam. Incidunt recusandae illum praesentium culpa, laboriosam enim.</p> </div> <div class="portfolio-projects__text-container">  <h3  class="portfolio-projects__text-h3">Издание Limited Edition</h3>         <p class="portfolio-projects__text-p">Дизайн</p>     </div></li>
@@ -185,7 +201,7 @@
                     media="(min-width: 1200px)"/> 
                     <source srcset="./images/portfolio/project-8-tablet-1x.jpg 1x, 
                     ./images/portfolio/project-8-tablet-2x.jpg 2x
-                    "media="(min-width: 768px)" /> 
+                    " media="(min-width: 768px)" /> 
                     <source srcset="./images/portfolio/project-8-phone-1x.jpg 1x, 
                     ./images/portfolio/project-8-phone-2x.jpg 2x"
                     media="(min-width: 320px)" /> <img src="./images/portfolio/project-8.jpg" alt="Project8" /> </picture> <p class="portfolio-projects__text-top">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat optio architecto quam, sed aperiam est assumenda iusto ullam laborum doloribus molestiae nemo numquam. Incidunt recusandae illum praesentium culpa, laboriosam enim.</p> </div> <div class="portfolio-projects__text-container">  <h3  class="portfolio-projects__text-h3">Проект LAB</h3>                      <p class="portfolio-projects__text-p">Маркетинг</p>  </div></li>
@@ -197,11 +213,12 @@
                     media="(min-width: 1200px)"/> 
                     <source srcset="./images/portfolio/project-9-tablet-1x.jpg 1x, 
                     ./images/portfolio/project-9-tablet-2x.jpg 2x
-                    "media="(min-width: 768px)" /> 
+                    " media="(min-width: 768px)" /> 
                     <source srcset="./images/portfolio/project-9-phone-1x.jpg 1x, 
                     ./images/portfolio/project-9-phone-2x.jpg 2x"
                     media="(min-width: 320px)" /> <img src="./images/portfolio/project-9.jpg" alt="Project9" /> </picture> <p class="portfolio-projects__text-top">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat optio architecto quam, sed aperiam est assumenda iusto ullam laborum doloribus molestiae nemo numquam. Incidunt recusandae illum praesentium culpa, laboriosam enim.</p> </div> <div class="portfolio-projects__text-container">  <h3  class="portfolio-projects__text-h3">Growing Business</h3>                <p class="portfolio-projects__text-p">Приложение</p> </div></li>
                 </ul>
+    </div>
     </section>
 </main>
 <footer class="footer"> 
@@ -231,7 +248,7 @@
     <section class="footer-subscribe">
         <form class="footer-subscribe-form">
             <div>
-                <label for="footer-subscribe-form__email"class="footer-subscribe-form__label">Подпишитесь на рассылку</label> 
+                <label for="footer-subscribe-form__email" class="footer-subscribe-form__label">Подпишитесь на рассылку</label> 
                 <input 
                         type=       "email"
                         name=       "footer-subscribe-form__mail"
@@ -240,10 +257,12 @@
                         placeholder="E-Mail"
                     />
             <button type ="submit" class="footer-subscribe-form__button">Подписаться</button>
-                <svg class="footer-subscribe-form__icon"width="24" height="24"><use href="./images/icons.svg#icon-footer-send"  ></use></svg>
+                <svg class="footer-subscribe-form__icon" width="24" height="24"><use href="./images/icons.svg#icon-footer-send"  ></use></svg>
             </div>
         </form>
-        </section>
+    </section>
+    </div>
+    
 </footer>
 <script src="./js/modal.js"></script>
 <script src="./js/header-mobile.js"></script>

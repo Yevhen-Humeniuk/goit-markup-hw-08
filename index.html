@@ -15,7 +15,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-
 <body>
 <header>
         <div class="container container-header">
@@ -34,22 +33,22 @@
                 </div>
 
             <button type="button" class="header-mobile-btn" header-mobile-open>
-                        <svg class="header-mobile-btn-icon" width="24" height="24">
-                            <use href="./images/icons.svg#header-mobile-btn"></use>
-                        </svg>
-                    </button>
-        <div class="backdrop is-hidden" header-mobile>       
-            <div class="header-mobile">
-                <div class="header-mobile__container">
-                    <button type="button" class="header-mobile-btn-close" header-mobile-close>
-                        <svg class="modal-close-icon" width="11" height="11">
-                            <use href="./images/icons.svg#icon-close-btn1"></use>
+                <svg class="header-mobile-btn-icon" width="24" height="24">
+                    <use href="./images/icons.svg#header-mobile-btn"></use>
+                </svg>
+            </button>
+            <div class="backdrop is-hidden" header-mobile>
+                <div class="header-mobile">
+                    <div class="header-mobile__container">
+                        <button type="button" class="header-mobile-btn-close" header-mobile-close>
+                            <svg class="modal-close-icon" width="11" height="11">
+                                <use href="./images/icons.svg#icon-close-btn1"></use>
                             </svg>
                         </button>
                         <ul class="header-mobile-nav">
-                            <li class="header-mobile-nav__item"><a href="./index.html"    class="header-mobile-nav__link_active">Студия</a></li>                           
-                            <li class="header-mobile-nav__item"><a href="./portfolio.html"class="header-mobile-nav__link">Портфолио</a></li>
-                            <li class="header-mobile-nav__item"><a href="./contact.html"  class="header-mobile-nav__link">Контакты</a></li>
+                            <li class="header-mobile-nav__item"><a href="./index.html" class="header-mobile-nav__link_active">Студия</a></li>                           
+                            <li class="header-mobile-nav__item"><a href="./portfolio.html" class="header-mobile-nav__link">Портфолио</a></li>
+                            <li class="header-mobile-nav__item"><a href="./contact.html" class="header-mobile-nav__link">Контакты</a></li>
                         </ul>
                 
                         <ul class="header-mobile-contact">
@@ -63,44 +62,42 @@
                             <li class="header-mobile-social__item"><a href="" class="header-mobile-social__link" >Facebook  </a> <a href="" class="header-mobile-social__t" >|</a></li>
                             <li class="header-mobile-social__item"><a href="" class="header-mobile-social__link" >LinkedIn  </a> <a href="" class="header-mobile-social__t" > </a></li>
                         </ul>
-
                         </div>
                     </div>                   
                     </div>
-                </div>
-                </section>    
-        </div>
     </header> 
     <main>
         <section class="hero">
             <div class="container">
         <h1 class="hero__title">эффективные решения <br/> для вашего бизнеса</h1>
             <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
-            
+            </div>
         </section>  
 <!--avantages-->
 <section class="services"> 
     <div class="container">
     <ul class="sevices__list">
     <li class="services__item"> 
+        
+        <div class="services__container">
         <a href="" class="services__icon"> 
-            <div class="services__container"> <svg class="services-link-icon" width="67" height="70"> 
-                <use href="./images/icons.svg#icon-services-01" ></use> </svg> </a> </div> 
+             <svg class="services-link-icon" width="67" height="70"> 
+                <use href="./images/icons.svg#icon-services-01" ></use> </svg></a></div>
                 <h3 class="services__title">Внимание к деталям</h3><p class="services__text">Идейные соображения, а также  начало повседневной работы по формированию позиции.</p></li>
     <li class="services__item"> 
-        <a href="" class="services__icon"> 
-            <div class="services__container"> <svg class="services-link-icon" width="67" height="70"> 
-                <use href="./images/icons.svg#icon-services-02" ></use> </svg> </a> </div> 
+        <div class="services__container"><a href="" class="services__icon"> 
+            <svg class="services-link-icon" width="67" height="70"> 
+                <use href="./images/icons.svg#icon-services-02" ></use> </svg></a></div>
                 <h3 class="services__title">Пунктуальность</h3><p class="services__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
     <li class="services__item"> 
-        <a href="" class="services__icon"> 
-            <div class="services__container"> <svg class="services-link-icon" width="67" height="70"> 
-                <use href="./images/icons.svg#icon-services-03" ></use> </svg> </a> </div> 
+        <div class="services__container"><a href="" class="services__icon"> 
+            <svg class="services-link-icon" width="67" height="70"> 
+                <use href="./images/icons.svg#icon-services-03" ></use> </svg></a></div>
                 <h3 class="services__title">Планирование</h3><p class="services__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
     <li class="services__item"> 
-        <a href="" class="services__icon"> 
-            <div class="services__container"> <svg class="services-link-icon" width="67" height="70"> 
-                <use href="./images/icons.svg#icon-services-04" ></use> </svg> </a> </div> 
+        <div class="services__container"><a href="" class="services__icon"> 
+            <svg class="services-link-icon" width="67" height="70"> 
+                <use href="./images/icons.svg#icon-services-04" ></use></svg></a></div> 
                 <h3 class="services__title">Современные технологии</h3><p class="services__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
 </ul>
 </div>
@@ -139,7 +136,7 @@
             media="(min-width: 1200px)"/> 
             <source srcset="./images/team_card_1_tablet_1x.jpg 1x, 
             ./images/team_card_1_tablet_2x.jpg 2x 
-            "media="(min-width: 768px)" /> 
+            " media="(min-width: 768px)" /> 
             <source srcset="./images/team_card_1_default_1x.jpg 1x, 
             ./images/team_card_1_default_2x.jpg 2x" media="(min-width: 320px)" />
             <img src="./images/team_card_1.jpg" alt="TeamCard1"/> 
@@ -161,7 +158,7 @@
             media="(min-width: 1200px)"/> 
             <source srcset="./images/team_card_2_tablet_1x.jpg 1x, 
             ./images/team_card_2_tablet_2x.jpg 2x 
-            "media="(min-width: 768px)" /> 
+            " media="(min-width: 768px)" /> 
             <source srcset="./images/team_card_2_default_1x.jpg 1x, 
             ./images/team_card_2_default_2x.jpg 2x" media="(min-width: 320px)" /> 
             <img src="./images/team_card_2.jpg" alt="TeamCard1"/> 
@@ -183,7 +180,7 @@
             media="(min-width: 1200px)"/> 
             <source srcset="./images/team_card_3_tablet_1x.jpg 1x, 
             ./images/team_card_3_tablet_2x.jpg 2x 
-            "media="(min-width: 768px)" /> 
+            " media="(min-width: 768px)" /> 
             <source srcset="./images/team_card_3_default_1x.jpg 1x, 
             ./images/team_card_3_default_2x.jpg 2x" media="(min-width: 320px)" /> 
             <img src="./images/team_card_3.jpg" alt="TeamCard1"/> 
@@ -205,7 +202,7 @@
             media="(min-width: 1200px)"/> 
             <source srcset="./images/team_card_4_tablet_1x.jpg 1x, 
             ./images/team_card_4_tablet_2x.jpg 2x 
-            "media="(min-width: 768px)" /> 
+            " media="(min-width: 768px)" /> 
             <source srcset="./images/team_card_4_default_1x.jpg 1x, 
             ./images/team_card_4_default_2x.jpg 2x" media="(min-width: 320px)" /> 
             <img src="./images/team_card_4.jpg" alt="TeamCard1"/> 
@@ -251,8 +248,8 @@
     <address> 
             <ul class="foter-address">
                 <li class="foter-address-item"><a href="https://goo.gl/maps/wMssc7S66yAjxJLt8" target="_blank" rel="noopen nofollow noreferrer" class="foter-address-text1">г. Киев, пр-т Леси Украинки, 26 </a></li>
-                <li class="foter-address-item"><a href="mailto:info@devstudio.com"class="foter-address-text2">info@devstudio.com</a></li>
-                <li class="foter-address-item"><a href="tel:+380961111111"class="foter-address-text2">+380961111111</a></li>
+                <li class="foter-address-item"><a href="mailto:info@devstudio.com" class="foter-address-text2">info@devstudio.com</a></li>
+                <li class="foter-address-item"><a href="tel:+380961111111" class="foter-address-text2">+380961111111</a></li>
             </ul>  
     </address>
     <section >
@@ -266,12 +263,10 @@
             </ul>
         </div>   
     </section>
-
-
     <section class="footer-subscribe">
         <form class="footer-subscribe-form">
             <div>
-                <label for="footer-subscribe-form__email"class="footer-subscribe-form__label">Подпишитесь на рассылку</label> 
+                <label for="footer-subscribe-form__email" class="footer-subscribe-form__label">Подпишитесь на рассылку</label> 
                 <input 
                         type="email"
                         name="footer-subscribe-form__mail"
@@ -280,10 +275,11 @@
                         placeholder="E-Mail"
                     />
             <button type ="submit" class="footer-subscribe-form__button">Подписаться</button>
-                <svg class="footer-subscribe-form__icon"width="24" height="24"><use href="./images/icons.svg#icon-footer-send"  ></use></svg>
+                <svg class="footer-subscribe-form__icon" width="24" height="24"><use href="./images/icons.svg#icon-footer-send"  ></use></svg>
             </div>
         </form>
         </section>
+    </div>
 </footer>
 <!--modal-->
 <div class="backdrop is-hidden" data-modal>
@@ -323,7 +319,7 @@
 </span>
 </div>
 <div  class="modal-window__field">
-        <label for="modal-email"class="modal-window__label">Почта</label> 
+        <label for="modal-email" class="modal-window__label">Почта</label> 
         <span class="modal-window__wrap">
         <input 
         type="email"
@@ -359,7 +355,7 @@
             <use href="./images/icons.svg#icon-form-check"></use>
             </svg>
         </span>
-        Соглашаюсь с рассылкой и принимаю <p class=" modal-check-text1">  Условия договора</p></label
+        Соглашаюсь с рассылкой и принимаю <span class=" modal-check-text1"> Условия договора</span></label
         >
     </div>
     <button type ="submit" class="modal-submit-btn">Отправить</button></form>
